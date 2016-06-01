@@ -1,6 +1,6 @@
 {
-  "name": "toolkit",
-  "version": "0.0.1",
+  "name": "mg-react-ui-toolkit",
+  "version": "0.0.3",
   "description": "React UI Toolkit",
   "main": "dist/mg-react-ui-toolkit.js",
   "scripts": {
