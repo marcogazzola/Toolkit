@@ -1,0 +1,54 @@
+@import "../variables.less";
+
+input.underline {
+  display: block;
+  margin: 0;
+  min-width: 50px;
+  width: 100%;
+  font-family: @font-family;
+  font-size: @font-size;
+  appearance: none;
+  box-shadow: none;
+  border: 1px dashed #ccc;
+  padding: 10px;
+  border-bottom: solid 2px @primary;
+}
+input.underline:focus {
+  outline: none;
+  border-bottom: solid 2px lighten(@info, 4%);
+}
+
+
+
+input.small {
+  width: 100px;
+}
+input.medium {
+  width: 200px;
+}
+input.full {
+  width: 100%;
+}
+
+
+/*******************************/
+/* Inverse (dark version) */
+/*******************************/
+input.inverse {
+  display: block;
+  margin: 0;
+  width: 200px;
+  font-family: @font-family;
+  font-size: @font-size;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  background-color: #222;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px @primary;
+}
+input.inverse:focus {
+  outline: none;
+  border-bottom: solid 2px lighten(@info, 4%);
+}

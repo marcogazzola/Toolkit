@@ -1,0 +1,189 @@
+@import "../variables.less";
+
+
+.default {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+
+    /*fix for FF unable to apply focus style bug */
+    /*border: 1px solid white;*/
+
+    /*required for proper track sizing in FF*/
+    /*width: 300px;*/
+}
+.default::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: white;
+    border: none;
+    border-radius: 3px;
+}
+.default::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: @primary;
+    margin-top: -4px;
+}
+.default:focus {
+    outline: none;
+}
+.default:focus::-webkit-slider-runnable-track {
+    background: white;
+}
+
+.default::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: white;
+    border: none;
+    border-radius: 3px;
+}
+.default::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: @primary;
+}
+
+/*hide the outline behind the border*/
+.default:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+.default::-ms-track {
+    width: 300px;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+.default::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+.default::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+.default::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #FF4081;
+}
+.default:focus::-ms-fill-lower {
+    background: #888;
+}
+.default:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+
+
+
+
+
+.light {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+
+    /*fix for FF unable to apply focus style bug */
+    /*border: 1px solid white;*/
+
+    /*required for proper track sizing in FF*/
+    /*width: 300px;*/
+}
+.light::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 3px;
+    background: #666;
+    border: none;
+    border-radius: 3px;
+}
+.light::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #222;
+    margin-top: -6px;
+    cursor: pointer;
+}
+.light:focus {
+    outline: none;
+}
+.light:focus::-webkit-slider-runnable-track {
+    background: #666;
+}
+
+.light::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #666;
+    border: none;
+    border-radius: 3px;
+}
+.light::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: @primary;
+}
+
+/*hide the outline behind the border*/
+.light:-moz-focusring{
+    outline: 1px solid #666;
+    outline-offset: -1px;
+}
+
+.light::-ms-track {
+    width: 300px;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove light tick marks*/
+    color: transparent;
+}
+.light::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+.light::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+.light::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #FF4081;
+}
+.light:focus::-ms-fill-lower {
+    background: #888;
+}
+.light:focus::-ms-fill-upper {
+    background: #ccc;
+}

@@ -1,0 +1,91 @@
+
+.tabbar.nav {
+  // margin-bottom: 0;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.tabbar.nav > li {
+  position: relative;
+  display: block;
+}
+.tabbar.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.tabbar.nav > li > a:hover,
+.tabbar.nav > li > a:focus {
+  text-decoration: none;
+  /*background-color: #eeeeee;*/
+  border-bottom: 2px solid rgb(88, 148, 228)blue;
+}
+.tabbar.nav > li.disabled > a {
+  color: #777777;
+}
+.tabbar.nav > li.disabled > a:hover,
+.tabbar.nav > li.disabled > a:focus {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.tabbar.nav .tabbar.nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.tabbar.nav-pills > li {
+  float: left;
+  cursor: pointer;
+}
+.tabbar.nav-pills > li > a {
+  border-radius: 0px;
+}
+.tabbar.nav-pills > li + li {
+  margin-left: 2px;
+}
+.tabbar.nav-pills > li.active > a,
+.tabbar.nav-pills > li.active > a:hover,
+.tabbar.nav-pills > li.active > a:focus {
+  /*color: #ffffff;*/
+  /*background-color: #337ab7;*/
+  color: orange;
+  border-bottom: 2px solid #222;
+}
+
+.clearfix:before,
+.clearfix:after,
+.tabbar.nav:before,
+.tabbar.nav:after {
+  content: " ";
+  display: table;
+}
+
+
+.tabbar.clearfix:before,
+.tabbar.clearfix:after,
+.tabbar.nav:before,
+.tabbar.nav:after,
+.tabbar.navbar:before,
+.tabbar.navbar:after,
+.tabbar.navbar-header:before,
+.tabbar.navbar-header:after,
+.tabbar.navbar-collapse:before,
+.tabbar.navbar-collapse:after {
+  content: " ";
+  display: table;
+}
+.tabbar.nav:after,
+.tabbar.navbar:after,
+.tabbar.navbar-header:after,
+.tabbar.navbar-collapse:after {
+  clear: both;
+}
+
+.affix {
+  position: fixed;
+}

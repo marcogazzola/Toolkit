@@ -1,0 +1,68 @@
+
+.tabbarcustom.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.tabbarcustom.nav > li {
+  position: relative;
+  display: block;
+}
+.tabbarcustom.nav > li > a {
+  position: relative;
+  display: block;
+  color: white;
+  background-color: #ccc;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+.tabbarcustom.nav > li > a:hover,
+.tabbarcustom.nav > li > a:focus {
+  text-decoration: none;
+  /*background-color: #eeeeee;*/
+  color: #666;
+}
+.tabbarcustom.nav > li.disabled > a {
+  color: #777777;
+}
+.tabbarcustom.nav > li.disabled > a:hover,
+.tabbarcustom.nav > li.disabled > a:focus {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.tabbarcustom.nav .tabbarcustom.nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.tabbarcustom.nav-pills > li {
+  float: left;
+  cursor: pointer;
+}
+.tabbarcustom.nav-pills > li > a {
+  border-radius: 0px;
+}
+.tabbarcustom.nav-pills > li + li {
+  margin-left: 2px;
+}
+.tabbarcustom.nav-pills > li.active > a,
+.tabbarcustom.nav-pills > li.active > a:hover,
+.tabbarcustom.nav-pills > li.active > a:focus {
+  /*color: #ffffff;*/
+  background-color: white;
+  color: #222;
+}
+
+.clearfix:before,
+.clearfix:after,
+.tabbarcustom.nav:before,
+.tabbarcustom.nav:after {
+  content: " ";
+  display: table;
+}

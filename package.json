@@ -1,0 +1,82 @@
+{
+  "name": "toolkit",
+  "version": "0.0.1",
+  "description": "React UI Toolkit",
+  "main": "dist/mg-react-ui-toolkit.js",
+  "scripts": {
+    "clean": "rimraf lib dist",
+    "build": "babel src --out-dir lib && gulp build",
+    "build:umd": "webpack src/index.js --output-path dist --output-filename mg-react-ui-toolkit.js",
+    "build:umd:minified": "NODE_ENV=production webpack src/index.js --output-path dist-min --output-filename mg-react-ui-toolkit.js --output-public-path /",
+    "lint": "./node_modules/.bin/eslint src test examples",
+    "prepublish": "npm run clean && npm run build && npm run build:umd",
+    "test": "node_modules/.bin/ava --tap test | tnyan",
+    "test:cov": "node_modules/.bin/nyc node_modules/.bin/ava --verbose test",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcogazzola/toolkit.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "toolkit",
+    "starter kit",
+    "reload",
+    "webpack"
+  ],
+  "author": "Marco Gazzola <reactjs@marcogazzola.com> (http://github.com/marcogazzola)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcogazzola/toolkit"
+  },
+  "homepage": "https://github.com/marcogazzola/toolkit",
+  "devDependencies": {
+    "ava": "0.15.0",
+    "babel-cli": "6.9.0",
+    "babel-core": "6.9.0",
+    "babel-eslint": "6.0.4",
+    "babel-loader": "6.2.4",
+    "babel-plugin-object-assign": "1.2.1",
+    "babel-plugin-transform-flow-strip-types": "6.8.0",
+    "babel-plugin-transform-inline-environment-variables": "6.8.0",
+    "babel-plugin-transform-node-env-inline": "6.8.0",
+    "babel-plugin-transform-object-assign": "6.8.0",
+    "babel-plugin-transform-undefined-to-void": "6.8.0",
+    "babel-polyfill": "6.9.0",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-0": "6.5.0",
+    "cz-conventional-changelog": "1.1.6",
+    "eslint": "2.10.2",
+    "eslint-config-airbnb": "9.0.1",
+    "eslint-plugin-react": "5.1.1",
+    "ghooks": "1.2.1",
+    "jsdom": "9.2.0",
+    "nyc": "6.4.4",
+    "react-addons-test-utils": "15.1.0",
+    "rimraf": "2.5.2",
+    "semantic-release": "^4.3.5",
+    "sinon": "1.17.4",
+    "tap-nyan": "0.0.2",
+    "validate-commit-msg": "2.6.1",
+    "watch": "0.18.0",
+    "webpack": "1.13.1",
+    "file-loader": "^0.8.4",
+    "json-loader": "^0.5.2",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "css-loader": "^0.23.1",
+    "url-loader": "^0.5.6",
+    "style-loader": "^0.13.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "hoist-non-react-statics": "1.0.6",
+    "gulp": "^3.9.1"
+  },
+  "peerDependencies": {
+    "react": "0.14.7",
+    "react-dom": "0.14.7"
+  },
+  "npmName": "mg-react-ui-toolkit"
+}
