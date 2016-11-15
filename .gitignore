@@ -10,3 +10,5 @@ coverage
 local_data/
 *.bat
 .vscode/
+*.log.*
+FireBaseApp3/

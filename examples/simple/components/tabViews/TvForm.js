@@ -78,7 +78,7 @@ export default class TvForm extends Component {
           <Card title="<ListImageTemplate />" description="Another example of list">
             <SimpleList
               data={[{ text: 'Pippo', src:'//az594751.vo.msecnd.net/cdn/LinkedIn.svg' }, { text: 'pluto', src:'//az594751.vo.msecnd.net/cdn/Adobe.svg' }]}
-              template={<ListImageTemplate />}
+              template={ListImageTemplate}
               />
           </Card>
         </Grid>
