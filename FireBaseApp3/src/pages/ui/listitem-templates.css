@@ -1,0 +1,17 @@
+.custom-listitem {
+  padding: 10px;
+  border-bottom: 1px dashed #ccc;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.custom-listitem.complex {
+  background-color: #efefef;
+  border-radius: 5px;
+  border-bottom: none;
+}
+
+.custom-listitem .label {
+  line-height: 30px;
+  vertical-align: middle;
+  height: 30px;
+}

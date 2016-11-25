@@ -2,7 +2,10 @@ import Hello from './hello/Hello';
 import FlatButton from './components/buttons/flat/FlatButton';
 import FlatButtonGroup from './components/buttons/flat/FlatButtonGroup';
 import FlatButtonContainer from './components/buttons/flat/FlatButtonContainer';
-
+import IconAwesomeStacked from './components/buttons/icon-awesome-stacked/IconAwesomeStacked';
+import ImageButton from './components/buttons/imageButton/ImageButton';
+import NavigationBar from './components/navigation/NavigationBar';
+import NavigationItem from './components/navigation/NavigationItem';
 import TabBar from './components/navigation/TabBar';
 import CollapsablePanel from './components/panels/collassable/CollapsablePanel';
 import DataTable from './components/panels/data-table/DataTable';
@@ -27,10 +30,10 @@ import './styles/utils';
 
 
 export {
-  Hello, Grid, Card, Separator,
-  TabBar, FlatButton, FlatButtonGroup, FlatButtonContainer,
-  LoremText, H,
-  CollapsablePanel, DataTable, SimpleList,
-  domUtils,
-  GMap, Modal, Footer, Image,
+    Hello, Grid, Card, Separator,
+    TabBar, FlatButton, FlatButtonGroup, FlatButtonContainer,
+    LoremText, H,
+    CollapsablePanel, DataTable, SimpleList,
+    domUtils,
+    GMap, Modal, Footer, Image, IconAwesomeStacked, ImageButton, NavigationBar, NavigationItem,
 };

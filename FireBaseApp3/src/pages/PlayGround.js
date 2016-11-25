@@ -1,4 +1,4 @@
-import './app.css';
+import './../app.css';
 import './custom-tabbar.css';
 
 // import 'mg-react-ui-toolkit/styles/forms';
@@ -26,7 +26,7 @@ const datalist = {
   CO2: '18.23857923750327',
 };
 
-export default class App extends Component {
+export default class PlayGround extends Component {
   constructor(props) {
     super(props);
     this.onTabSelect = this.onTabSelect.bind(this);
@@ -110,7 +110,6 @@ export default class App extends Component {
     return (
       <div>
         <Modal open={this.state.isOpened} onBackDropClick={this.closeModal}>
-          {/* <CustomModal onConfirm={this.closeModal} onClose={this.closeModal}/> */}
           {this.state.modal}
         </Modal>
 

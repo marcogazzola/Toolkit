@@ -10,35 +10,32 @@ export default class SimpleList extends Component {
     this.renderDevice = this.renderDevice.bind(this);
   }
   renderDevice(item, index) {
-    // return <Tpl key={'item' + item} item={item}/>;
-    // return React.createElement(Tpl, { item, key: `c${item}` }, item);
     return React.createElement(this.props.template,
       {
         item,
         key: `c${index}${new Date().valueOf()}`,
-        actions: this.props.actions,
+        actions: this.props.actions, //(`c${index}${new Date().valueOf()}`),
       }, null);
   }
 
   render() {
+    console.log('SimpleList',this.props.data);
     return (
       <div>
-        {this.props.data.map(this.renderDevice)}
+        {this.props.data.map((object, i) => this.renderDevice(object, i))}
       </div>
     );
   }
 }
 
-
 // PropTypes validation
 SimpleList.propTypes = {
   template: PropTypes.any.isRequired,
   data: PropTypes.array,
-  actions: PropTypes.object,
+  actions: PropTypes.funcion,
 };
 
 // default props
 SimpleList.defaultProps = {
-  data: {},
-  actions: {},
+  data: [],
 };

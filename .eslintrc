@@ -1,19 +1,35 @@
 {
   "extends": "eslint-config-airbnb",
-  "parser": "babel-eslint",
   "env": {
     "browser": true,
     "mocha": true,
     "node": true
   },
   "rules": {
+    "react/prop-types": 0,
+    "react/no-is-mounted": 0,
+    "react/no-deprecated": 0,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
     "react/react-in-jsx-scope": 2,
+    "react/prefer-stateless-function": 0,
     "jsx-quotes": 2,
     "id-length": 0,
     "radix": 0,
     "no-param-reassign": 0,
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
   },
   "plugins": [
     "react"
